@@ -21,13 +21,8 @@
 		 reg(i,:)		= rec(i)*x+b
 		 
 	  end do 
-	  
-	  print(rec)
-	  print(tval)
-	  
 	 
-    sm		 	= runave_n(var,9,0,1)
-	
+
 	  y 			= new((/nvar,3,nyr/),"float")
 	  y(:,0,:) 		= var
 	  y(:,1,:) 		= reg
